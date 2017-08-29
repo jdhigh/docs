@@ -20,10 +20,11 @@ To check your edits when you're done, use `cd ~/myopenaps && cat preferences.jso
         "rewind_resets_autosens": true,
         "adv_target_adjustments": true,
         "unsuspend_if_no_temp": false,
+        "enableUAM": false,
         "enableSMB_with_bolus": false,
         "enableSMB_with_COB": false,
-        "enableSMB_with_temptarget": false,
-        "enableUAM": false
+        "enableSMB_with_temptarget": false
+        
 }
 ```
 
@@ -77,6 +78,10 @@ Many people occasionally forget to resume / unsuspend their pump after reconnect
 
 These preference should **not** be enabled until you've been looping (and running autotune) for several weeks and are confident that all of your basals and ratios are correct.  Please read the [oref1 section of the docs](http://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/oref1.html) before doing so.
 
+#### enableUAM
+
+This enables detection of unannounced meal (UAM) carb absorption.
+
 #### enableSMB_with_bolus
 
 This enables supermicrobolus for DIA hours after a manual bolus.
@@ -88,10 +93,6 @@ This enables supermicrobolus (SMB) while carbs on board (COB) is positive.
 #### enableSMB_with_temptarget 
 
 This enables supermicrobolus (SMB) with eating soon / low temp targets. With this feature enabled, any temporary target below 100mg/dL, such as a temp target of 99 (or 80, the typical eating soon target) will enable SMB.
-
-#### enableUAM
-
-This enables detection of unannounced meal (UAM) carb absorption.
 
 ### Other preferences:
 
